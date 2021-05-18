@@ -9,6 +9,7 @@ import UIKit
 class EntryViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var field: UITextField!
+//    @IBOutlet var textViewField: UITextView!
     
     var update: (() -> Void)?
 
@@ -16,17 +17,17 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         field.delegate = self
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTask))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTodo))
         
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        saveTask()
+        saveTodo()
         
         return true
     }
 
-     @objc func saveTask() {
+     @objc func saveTodo() {
         guard let text = field.text, !text.isEmpty else{
         return
     }
@@ -35,7 +36,13 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         }
          let newCount = count + 1
         UserDefaults().set(newCount, forKey: "count")
-        UserDefaults().set(text, forKey: "task_\(newCount)")
+        UserDefaults().set(text, forKey: "todo_\(newCount)")
+        
+        update?()
+        
+        navigationController?.popViewController(animated: true)
 }
+    
+   
      
 }
