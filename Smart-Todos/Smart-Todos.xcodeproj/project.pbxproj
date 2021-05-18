@@ -14,6 +14,7 @@
 		B4A7E2562652AC94009A478F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A7E2542652AC94009A478F /* Main.storyboard */; };
 		B4A7E2582652AC97009A478F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A7E2572652AC97009A478F /* Assets.xcassets */; };
 		B4A7E25B2652AC97009A478F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A7E2592652AC97009A478F /* LaunchScreen.storyboard */; };
+		B4A7E2662652EE59009A478F /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A7E2652652EE59009A478F /* TodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B4A7E2572652AC97009A478F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A7E25A2652AC97009A478F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4A7E25C2652AC97009A478F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A7E2652652EE59009A478F /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,33 @@
 		B4A7E24D2652AC94009A478F /* Smart-Todos */ = {
 			isa = PBXGroup;
 			children = (
-				B4A7E24E2652AC94009A478F /* AppDelegate.swift */,
-				B4A7E2502652AC94009A478F /* SceneDelegate.swift */,
-				B4A7E2522652AC94009A478F /* HomeViewController.swift */,
+				B4A7E26B2653C6F4009A478F /* Resources */,
+				B4A7E26A2653C6D8009A478F /* Views */,
 				B4A7E2542652AC94009A478F /* Main.storyboard */,
-				B4A7E2572652AC97009A478F /* Assets.xcassets */,
-				B4A7E2592652AC97009A478F /* LaunchScreen.storyboard */,
 				B4A7E25C2652AC97009A478F /* Info.plist */,
-				186BD80F2652E14C00D9E144 /* EntryViewController.swift */,
 			);
 			path = "Smart-Todos";
+			sourceTree = "<group>";
+		};
+		B4A7E26A2653C6D8009A478F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4A7E2522652AC94009A478F /* HomeViewController.swift */,
+				186BD80F2652E14C00D9E144 /* EntryViewController.swift */,
+				B4A7E2652652EE59009A478F /* TodoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4A7E26B2653C6F4009A478F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4A7E24E2652AC94009A478F /* AppDelegate.swift */,
+				B4A7E2572652AC97009A478F /* Assets.xcassets */,
+				B4A7E2592652AC97009A478F /* LaunchScreen.storyboard */,
+				B4A7E2502652AC94009A478F /* SceneDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +99,7 @@
 				B4A7E2472652AC94009A478F /* Sources */,
 				B4A7E2482652AC94009A478F /* Frameworks */,
 				B4A7E2492652AC94009A478F /* Resources */,
+				B4A7E2682653C1B3009A478F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,11 +155,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4A7E2682653C1B3009A478F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4A7E2472652AC94009A478F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A7E2662652EE59009A478F /* TodoViewController.swift in Sources */,
 				B4A7E2532652AC94009A478F /* HomeViewController.swift in Sources */,
 				186BD8102652E14C00D9E144 /* EntryViewController.swift in Sources */,
 				B4A7E24F2652AC94009A478F /* AppDelegate.swift in Sources */,
