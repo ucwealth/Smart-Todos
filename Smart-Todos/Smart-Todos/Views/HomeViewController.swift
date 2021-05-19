@@ -5,7 +5,6 @@
 import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
-    var entryVC = EntryViewController()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Todos"
@@ -40,6 +39,7 @@ extension HomeViewController: UITableViewDelegate {
                 as? TodoViewController else { return }
         viewCon.title = "New ToDo"
         viewCon.todo = todoList![indexPath.row]
+        viewCon.selectedItem = indexPath.row
         navigationController?.pushViewController(viewCon, animated: true)
     }
 }
@@ -53,7 +53,6 @@ extension HomeViewController: UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         if let todo = todoList {
             cell.textLabel?.text = todo[indexPath.row]
