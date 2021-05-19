@@ -8,7 +8,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate, UITextViewDele
     @IBOutlet weak var inputField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.9160798613, green: 0.8159586233, blue: 0.5499027492, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.9523807564, green: 0.8469814127, blue: 0.5637647079, alpha: 1)
         inputField.delegate = self
         navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTodo))
