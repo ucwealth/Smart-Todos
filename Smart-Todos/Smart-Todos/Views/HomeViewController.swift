@@ -4,9 +4,11 @@
 
 import UIKit
 class HomeViewController: UIViewController {
+    
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.9160798613, green: 0.8159586233, blue: 0.5499027492, alpha: 1)
         self.title = "Todos"
         tableView.delegate = self
         tableView.dataSource = self
