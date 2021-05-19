@@ -1,15 +1,14 @@
 //
 //  EntryViewController.swift
 //  Smart-Todos
-//  Created by apple on 17/05/2021.
+//  Created by apple on 17/05/2021
+
 import UIKit
-class EntryViewController: UIViewController, UITextFieldDelegate {
-    @IBOutlet var field: UITextField!
-    //    @IBOutlet var textViewField: UITextView!
-    var update: (() -> Void)?
+class EntryViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+    @IBOutlet weak var inputField: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        field.delegate = self
+        inputField.delegate = self
         navigationItem.rightBarButtonItem =
             UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(saveTodo))
     }
@@ -18,16 +17,9 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     @objc func saveTodo() {
-        guard let text = field.text, !text.isEmpty else {
-            return
+        if (inputField.text != nil) && inputField.text != "" {
+            todoList?.append(inputField.text!)
         }
-        guard let  count = UserDefaults().value(forKey: "count") as? Int else {
-            return
-        }
-        let newCount = count + 1
-        UserDefaults().set(newCount, forKey: "count")
-        UserDefaults().set(text, forKey: "todo_\(newCount)")
-        update?()
         navigationController?.popViewController(animated: true)
     }
 }

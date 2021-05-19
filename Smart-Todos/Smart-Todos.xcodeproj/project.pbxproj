@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		186BD8102652E14C00D9E144 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BD80F2652E14C00D9E144 /* EntryViewController.swift */; };
+		B40D1C9C265475FF00A4AD0A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40D1C9B265475FF00A4AD0A /* Store.swift */; };
 		B4A7E24F2652AC94009A478F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A7E24E2652AC94009A478F /* AppDelegate.swift */; };
 		B4A7E2512652AC94009A478F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A7E2502652AC94009A478F /* SceneDelegate.swift */; };
 		B4A7E2532652AC94009A478F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A7E2522652AC94009A478F /* HomeViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		186BD80F2652E14C00D9E144 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		B40D1C9B265475FF00A4AD0A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B4A7E24B2652AC94009A478F /* Smart-Todos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart-Todos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A7E24E2652AC94009A478F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A7E2502652AC94009A478F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				B4A7E26A2653C6D8009A478F /* Views */,
 				B4A7E2542652AC94009A478F /* Main.storyboard */,
 				B4A7E25C2652AC97009A478F /* Info.plist */,
+				B40D1C9B265475FF00A4AD0A /* Store.swift */,
 			);
 			path = "Smart-Todos";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				B4A7E2662652EE59009A478F /* TodoViewController.swift in Sources */,
 				B4A7E2532652AC94009A478F /* HomeViewController.swift in Sources */,
 				186BD8102652E14C00D9E144 /* EntryViewController.swift in Sources */,
+				B40D1C9C265475FF00A4AD0A /* Store.swift in Sources */,
 				B4A7E24F2652AC94009A478F /* AppDelegate.swift in Sources */,
 				B4A7E2512652AC94009A478F /* SceneDelegate.swift in Sources */,
 			);
