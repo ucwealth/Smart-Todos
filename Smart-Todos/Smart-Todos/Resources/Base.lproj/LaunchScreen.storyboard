@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="todo-icon" translatesAutoresizingMaskIntoConstraints="NO" id="A03-HS-3MQ">
-                                <rect key="frame" x="30" y="290" width="354" height="346"/>
+                                <rect key="frame" x="41" y="296" width="332" height="304"/>
                                 <color key="backgroundColor" red="0.99782079459999995" green="0.95751076940000002" blue="0.6121886969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -31,10 +31,10 @@
                         <constraints>
                             <constraint firstItem="d7R-uv-LIa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9rn-h9-n3v"/>
                             <constraint firstItem="d7R-uv-LIa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="Nqi-Uc-PfZ"/>
-                            <constraint firstItem="A03-HS-3MQ" firstAttribute="top" secondItem="d7R-uv-LIa" secondAttribute="bottom" constant="40" id="WMQ-tJ-B3d"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="A03-HS-3MQ" secondAttribute="bottom" constant="226" id="bOi-44-pOX"/>
-                            <constraint firstItem="A03-HS-3MQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="c6g-xL-8vk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A03-HS-3MQ" secondAttribute="trailing" constant="30" id="k6R-2d-Z4g"/>
+                            <constraint firstItem="A03-HS-3MQ" firstAttribute="top" secondItem="d7R-uv-LIa" secondAttribute="bottom" constant="46" id="WMQ-tJ-B3d"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="A03-HS-3MQ" secondAttribute="bottom" constant="262" id="bOi-44-pOX"/>
+                            <constraint firstItem="A03-HS-3MQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="c6g-xL-8vk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A03-HS-3MQ" secondAttribute="trailing" constant="41" id="k6R-2d-Z4g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7R-uv-LIa" secondAttribute="trailing" constant="67" id="tTa-Xv-0am"/>
                         </constraints>
                     </view>
